@@ -11,7 +11,7 @@
 <body>
 
 		<nav id="mainnav">
-		<input type="checkbox" id="cbmenu" /> <label id="lmenu1" for="cbmenu">Menu  &darr;</label><label id="lmenu2" for="cbmenu">Menu  &uarr;</label>
+		<input type="checkbox" id="cbmenu" /> <label id="lmenu1" for="cbmenu">Menu  &#9660;</label><label id="lmenu2" for="cbmenu">Menu  &#9650;</label>
 
 		<?php // wp_nav_menu( array( 'theme_location' => 'mainmenu' ) ); ?>
 		<?php wp_nav_menu( array('menu_class' => 'menu',
