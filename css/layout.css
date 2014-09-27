@@ -1,4 +1,4 @@
-html {
+﻿html {
   box-sizing: border-box !important;
 }
 *, *:before, *:after {
@@ -36,7 +36,26 @@ body {
   font-style: normal; 
 }
  
-
+.contentrow table {
+	border-collapse: collapse;
+}
+ .contentrow td, .contentrow th {
+	border-bottom: 1px solid #ddd;
+	padding: 0.5em 1em 0.5em 0.25em;
+}
+.contentrow th {
+	text-align: left;
+	//color: #ff5500;
+}
+.contentrow ul {
+	padding: 0;
+	margin: 0;
+	list-style: disc outside none;
+	padding-left: 15px;
+}
+.contentrow li {
+padding: 0.5em 0px 0.5em 0.5em;
+}
 
 a {
 	color: #ff5500;
@@ -63,9 +82,7 @@ h3 {
 	margin: 0;
 }
 
-ul {
-	padding-left: 15px;
-}
+
 
 blockquote {
 	margin-left: 10px;
@@ -124,7 +141,7 @@ footer#mainfooter {
 	width: 100%;
 	text-align: right;
 	padding: 15px;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #ddd;
 }
 
 #mainfooter .footermenu ul {
@@ -160,7 +177,7 @@ div.contentrow > div {
 	padding: 15px;
 }
 div.cright {
-	width: 33%;
+	width: 350px;
 }
 div.part, aside.widget {
 	width: 100%;
