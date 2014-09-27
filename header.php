@@ -20,6 +20,7 @@
                                     'theme_location' => 'mainmenu',
                                     'walker'=> new Lipi_Nav_Menu()
                                     ) ); ?>
+		<?php get_search_form(); ?>
 		</nav>
 		<header id="mainheader">
 			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" id="headerlogo"/></a>

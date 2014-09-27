@@ -1,4 +1,4 @@
-﻿html {
+html {
   box-sizing: border-box !important;
 }
 *, *:before, *:after {
@@ -191,6 +191,48 @@ aside .widget-title {
 	margin-bottom: 5px;
 	
 }
+
+/* Suche */
+
+#mainnav > form.search-form {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 40px;
+	
+}
+#mainnav > form.search-form span.screen-reader-text {
+	display: none;
+	
+}
+#mainnav > form.search-form input.search-submit {
+	display: none;
+}
+#mainnav > form.search-form input.search-field {
+	background-image: url('../images/search.png'), linear-gradient(90deg, #000 0%, #000 100%);
+	background-repeat: no-repeat, no-repeat;
+	background-position: right center, right center;
+	background-size: 36px auto, 36px auto;
+	width: 36px;
+	border: none;
+	border-left: 1px solid #ddd;
+	transition: all 0.5s ease-in-out;
+	color: rgba(255, 255, 255, 0);
+	height: 100%;
+	cursor: pointer;
+	z-index: 106;
+}
+#mainnav > form.search-form input.search-field:hover {
+		background-image: url('../images/search.png'), linear-gradient(90deg, #ff5500 0%, #ff5500 100%);
+}
+#mainnav > form.search-form input.search-field:focus {
+	background-image: none;
+	width: 150px;
+	color: black;
+	background-color: white;
+	cursor: auto;
+}
+
 
 /* Navigation */
 #mainnav > input[type=checkbox] {
