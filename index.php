@@ -7,7 +7,7 @@
 				'caller_get_posts'=>1,
 				'paged'=>$paged,
 				);
-				query_posts($args);?>
+				//query_posts($args);?>
 	 
 				<?php // The Loop ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
