@@ -5,7 +5,7 @@
 $resultc = $wp_query->found_posts;
 if ($resultc > 0) {
 ?><div><?php
- echo $resultc; ?> Einträge gefunden</div>
+ echo $resultc; ?> <?php echo _n("Eintrag", "Einträge", $resultc); ?> gefunden</div>
 				<div class="post-content">
 				<?php // The Query ?>
 	 
