@@ -40,6 +40,14 @@ function register_my_menus() {
 add_action( 'widgets_init', 'lipifraktion_widgets_init' );
 add_action( 'init', 'register_my_menus' );
 add_theme_support('post-thumbnails');
+$args = array(
+	'search-form',
+	'comment-form',
+	'comment-list',
+	'gallery',
+	'caption'
+);
+add_theme_support( 'html5', $args );
 
 class Lipi_Nav_Menu extends Walker_Nav_Menu {
 	/**
