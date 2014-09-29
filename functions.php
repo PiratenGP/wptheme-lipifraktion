@@ -39,6 +39,7 @@ function register_my_menus() {
 
 add_action( 'widgets_init', 'lipifraktion_widgets_init' );
 add_action( 'init', 'register_my_menus' );
+add_filter('widget_text', 'do_shortcode');
 add_theme_support('post-thumbnails');
 $args = array(
 	'search-form',
