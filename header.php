@@ -23,8 +23,7 @@
 		<?php get_search_form(); ?>
 		</nav>
 		<header id="mainheader">
-			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" id="headerlogo"/></a>
-			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo2.png" id="headerlogo2"/></a>
+			<a class="homelink" href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.png" id="headerlogo"/><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>/images/logo2.png" id="headerlogo2"/></a>
 			<div class="sidebar-header">
 				<?php if ( !function_exists('dynamic_sidebar') ||
 			   !dynamic_sidebar('sidebar-header') ) : ?>
