@@ -9,21 +9,26 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery-1.11.1.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/doubletaptogo.min.js"></script>
 	<script type="text/javascript">
+	
 	$(function () {
 		if ( $(window).width() > 700) {
-		$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
+			$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
+			$('body').css("margin-top", $("#mainnav").height() + "px");
 		}
+		
 	});
 	$(window).resize(function() {
 		if ( $(window).width() > 700) {
 		$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
+				$('body').css("margin-top", $("#mainnav").height() + "px");
+		} else {
+			$('body').css("margin-top", "0");
 		}
 	}).resize()
 		</script>
     <?php wp_head(); ?>
 </head>
 <body>
-
 		<nav id="mainnav">
 		<input type="checkbox" id="cbmenu" /> <label id="lmenu1" for="cbmenu">Menu  &#9660;</label><label id="lmenu2" for="cbmenu">Menu  &#9650;</label>
 
