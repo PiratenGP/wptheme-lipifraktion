@@ -230,6 +230,18 @@ aside .widget-title {
 	cursor: pointer;
 	z-index: 106;
 }
+#mainnav > form.search-form input.search-field::-moz-placeholder {
+	color: transparent;
+	transition: color 0.5s ease-in-out;
+}
+ #mainnav > form.search-form input.search-field:-moz-placeholder {
+ 	color: transparent;
+	transition: color 0.5s ease-in-out;
+ }
+ #mainnav > form.search-form input.search-field::-webkit-input-placeholder {
+	color: transparent;
+	transition: color 0.5s ease-in-out;
+}
 #mainnav > form.search-form input.search-field:hover {
 		background-image: url('../images/search.png'), linear-gradient(90deg, #ff5500 0%, #ff5500 100%);
 }
@@ -239,6 +251,15 @@ aside .widget-title {
 	color: black;
 	background-color: white;
 	cursor: auto;
+}
+#mainnav > form.search-form input.search-field:focus::-moz-placeholder {
+	color: #555;
+}
+ #mainnav > form.search-form input.search-field:focus:-moz-placeholder {
+ 	color: #555;
+ }
+ #mainnav > form.search-form input.search-field:focus::-webkit-input-placeholder {
+	color: #555;
 }
 
 
