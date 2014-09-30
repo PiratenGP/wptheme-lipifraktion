@@ -311,9 +311,6 @@ aside .widget-title {
 	display: block;
 
 }
-#mainnav > div > ul > li> $ul > li:focus {
-	display: block;
-}
 #mainnav > div > ul > li > div.lvl > ul li {
 		margin: 0;
 	padding: 0;
