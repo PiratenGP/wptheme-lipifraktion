@@ -1,6 +1,31 @@
 <?php get_header(); ?>
 			<div class="cleft">		
-				<h1 class="post-title">Kategorie <em><?php single_cat_title( '', true ); ?></em></h1>
+			
+ <?php /* If this is a category archive */ if (is_category()) { ?>
+
+<h1 class="post-title">Kategorie <em><?php single_cat_title( '', true ); ?></em></h1>
+
+<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+
+<h1 class="post-title">Tag <em><?php single_tag_title( '', true ); ?></em></h1>
+
+<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+
+<h1 class="post-title">Archiv <em><?php the_time('d. F Y'); ?></em></h1>
+
+<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+
+<h1 class="post-title">Archiv <em><?php the_time('F Y'); ?></em></h1>
+
+<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+
+<h1 class="post-title">Archiv <em><?php the_time('Y'); ?></em></h1>
+
+<?php /* If this is an author archive */ } elseif (is_author()) { ?>
+
+<h1 class="post-title">Autor Archiv</h1>
+
+<?php } ?>
 				<?php global $wp_query;
 $resultc = $wp_query->found_posts;
 if ($resultc > 0) {
