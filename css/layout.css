@@ -104,7 +104,10 @@ hr {
 header#mainheader {
 	height: 295px;
 	height: auto;
-	background-image: linear-gradient(90deg, #e20513 0%, #ff8800 75%);
+	background-image: url('../images/gpbg.png'), linear-gradient(90deg, #e20513 0%, #ff8800 75%);
+	background-size: 100% auto, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom, top left;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -451,6 +454,9 @@ display: none;
 	}
 	div.contentrow > div:first-child {
 		border-top: none;
+	}
+	header#mainheader {
+		background-size: auto 100%, 100% 100%;
 	}
 }
 @media only screen and (max-width: 700px) {
