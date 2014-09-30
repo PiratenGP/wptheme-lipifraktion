@@ -11,14 +11,14 @@
 	<script type="text/javascript">
 	
 	$(function () {
-		if ( $(window).width() > 700) {
+		if ( $('#mainnav').css("position") == "fixed") {
 			$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
 			$('body').css("margin-top", $("#mainnav").height() + "px");
 		}
 		
 	});
 	$(window).resize(function() {
-		if ( $(window).width() > 700) {
+		if ( $('#mainnav').css("position") == "fixed") {
 		$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
 				$('body').css("margin-top", $("#mainnav").height() + "px");
 		} else {
