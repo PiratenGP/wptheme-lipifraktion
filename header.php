@@ -6,6 +6,20 @@
     <title><?php wp_title( '»', true, "right" ); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery-1.11.1.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/doubletaptogo.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		if ( $(window).width() > 700) {
+		$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
+		}
+	});
+	$(window).resize(function() {
+		if ( $(window).width() > 700) {
+		$( '#mainnav .main-menu-container li:has(ul)' ).doubleTapToGo();
+		}
+	}).resize()
+		</script>
     <?php wp_head(); ?>
 </head>
 <body>
