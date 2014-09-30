@@ -311,6 +311,9 @@ aside .widget-title {
 	display: block;
 
 }
+#mainnav > div > ul > li> $ul > li:focus {
+	display: block;
+}
 #mainnav > div > ul > li > div.lvl > ul li {
 		margin: 0;
 	padding: 0;
@@ -481,6 +484,7 @@ display: none;
 #mainnav {
 	position: relative;
 	padding-left: 0;
+	padding-right: 0;
 }
 #cbmenu:checked ~ div > ul {
 	max-height: 1000px;
@@ -535,6 +539,9 @@ display: none;
 	background-color: black;
 }
 #mainnav > div > ul > li:hover > a, #mainnav > div > ul > li.current-menu-item > a{
+	background-color: black;
+}
+#mainnav > div > ul > li > a:hover, #mainnav > div > ul > li.current-menu-item > a{
 	background-color: #ff5500;
 }
 
@@ -593,6 +600,7 @@ display: none;
 	color: white;
 	background-color: #ff5500;
 }
+
 #mainnav > div > ul > li > div.lvl ul > li.menu-item-has-children > a > span:before {
 	content: "";
 	float: none;
@@ -618,4 +626,7 @@ display: none;
 	left: 0;
 	margin-left: 20px;
 }	
+#mainnav > form.search-form {
+	height: 40px;
+}
 }
