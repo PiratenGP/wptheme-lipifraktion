@@ -36,7 +36,14 @@ function register_my_menus() {
 		)
 	);
 }
-
+function lipi_sidebar( $atts, $content="" ) {
+	global $LIPI_SIDEBAR;
+	if ($atts['title']) $array['title'] = $atts['title'];
+	$array['content'] = $content;
+	 $LIPI_SIDEBAR[] = $array;
+	 return "";
+}
+add_shortcode( 'lipi-sidebar', 'lipi_sidebar' );
 add_action( 'widgets_init', 'lipifraktion_widgets_init' );
 add_action( 'init', 'register_my_menus' );
 add_filter('widget_text', 'do_shortcode');
