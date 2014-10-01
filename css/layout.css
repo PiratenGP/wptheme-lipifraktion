@@ -431,7 +431,7 @@ display: none;
 .post.single .post-meta {
 	font-size: 90%;
 }
-.post.single .post-image {
+.post.single .post-image, .page .post-image {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width:100%;
@@ -442,7 +442,7 @@ display: none;
 	background-position:center center;
 	background-size: 100% auto;
 }
-.post.single .post-image > img {
+.post.single .post-image > img, .page .post-image > img {
 	width: 100%;
 	height: auto;
 }
