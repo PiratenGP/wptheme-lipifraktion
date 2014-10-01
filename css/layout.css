@@ -264,6 +264,18 @@ aside .widget-title {
 }
 
 
+#mainnav > #logosmall {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	background-image: url("../images/logosmall.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+}
+
 /* Navigation */
 #mainnav > input[type=checkbox] {
 	display: none;
@@ -280,7 +292,7 @@ aside .widget-title {
 	left: 0;
 	margin-top: 0px;
 	z-index: 99;
-	padding-left: 20px;
+	padding-left: 60px;
 	padding-right: 40px;
 	box-shadow:         0px 2px 4px 2px rgba(50, 50, 50, 0.75);
 }
@@ -460,7 +472,9 @@ display: none;
 	}
 }
 @media only screen and (max-width: 700px) {
-
+#mainnav > #logosmall {
+	display: none;
+}
 
 	#mainheader > div {
 	 display: none;

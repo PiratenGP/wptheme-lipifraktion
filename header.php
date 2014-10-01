@@ -6,6 +6,7 @@
     <title><?php wp_title( '»', true, "right" ); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery-1.11.1.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/doubletaptogo.min.js"></script>
 	<script type="text/javascript">
@@ -30,6 +31,7 @@
 </head>
 <body>
 		<nav id="mainnav">
+		<div id="logosmall"></div>
 		<input type="checkbox" id="cbmenu" /> <label id="lmenu1" for="cbmenu">Menu  &#9660;</label><label id="lmenu2" for="cbmenu">Menu  &#9650;</label>
 
 		<?php // wp_nav_menu( array( 'theme_location' => 'mainmenu' ) ); ?>
