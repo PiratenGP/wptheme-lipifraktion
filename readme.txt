@@ -2,7 +2,7 @@ Wordpress-Theme: LiPi-Fraktion
 =================================================
 Wordpress-Theme für die Fraktion Linke & Piraten im Göppinger Gemeinderat.
 
-Version 0.4.0, 01.10.2014
+Version 0.4.1, 01.10.2014
 
 Autor: @stoppegp
 License: GNU General Public License v2 or later
@@ -14,6 +14,10 @@ Features:
 Mit dem Shortcode [lipi-sidebar title="TITLE"]TEXT[/lipi-sidebar] können Elemente ind er Sidebar platziert werden.
 
 Changelog:
+= 01.10.2014 - v0.4.1 =
+-- Beitragsbilder für Seiten
+-- Favicon
+-- Logo in Navbar
 = 01.10.2014 - v0.4.0 =
 -- Shortcode Sidebar
 = 01.10.2014 - v0.3.0 =
