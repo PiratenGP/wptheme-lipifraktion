@@ -25,7 +25,7 @@
 <?php endwhile; // end of the loop. ?>
         </div>
 		<div class="post-meta">
-		Veröffentlicht am <?=get_the_time('j. F Y');?> umd <?=get_the_time('H:i');?> Uhr unter <?php the_category(', '); ?><?php the_tags(" und tagged ", ', ', ""); ?>.
+		Veröffentlicht am <?=get_the_time('j. F Y');?> um <?=get_the_time('H:i');?> Uhr unter <?php the_category(', '); ?><?php the_tags(" und tagged ", ', ', ""); ?>.
 		</div>
 		
 </div>
