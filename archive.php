@@ -25,6 +25,10 @@
 
 <h1 class="post-title">Autor Archiv</h1>
 
+<?php } elseif (is_post_type_archive()) {?>
+
+<h1 class="post-title"><?php post_type_archive_title(); ?></h1>
+
 <?php } ?>
 				<?php global $wp_query;
 $resultc = $wp_query->found_posts;
