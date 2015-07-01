@@ -43,7 +43,7 @@
 		<?php get_search_form(); ?>
 		</nav>
 		<header id="mainheader">
-			<a class="homelink" href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>res/images/logo_r1.png" id="headerlogo"/><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>res/images/logo2_r1.png" id="headerlogo2"/></a>
+			<a class="homelink" href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>/res/images/logo_r1.png" id="headerlogo"/><img alt="<?php bloginfo( "name" ); ?>" src="<?php bloginfo('template_url'); ?>/res/images/logo2_r1.png" id="headerlogo2"/></a>
 			<div class="sidebar-header">
 				<?php if ( !function_exists('dynamic_sidebar') ||
 			   !dynamic_sidebar('sidebar-header') ) : ?>
