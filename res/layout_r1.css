@@ -26,10 +26,10 @@ body {
 
 @font-face {
   font-family: 'FontLipiDefault';
-  src: url('../fonts/dejaweb-webfont.eot');
-  src: url('../fonts/dejaweb-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/dejaweb-webfont.woff') format('woff'),
-         url('../fonts/dejaweb-webfont.ttf') format('truetype'); 
+  src: url('res/fonts/dejaweb-webfont.eot');
+  src: url('res/fonts/dejaweb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('res/fonts/dejaweb-webfont.woff') format('woff'),
+         url('res/fonts/dejaweb-webfont.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal; 
 }
@@ -104,7 +104,7 @@ hr {
 header#mainheader {
 	height: 295px;
 	height: auto;
-	background-image: url('../images/gpbg.png'), linear-gradient(90deg, #e20513 0%, #ff8800 75%);
+	background-image: url('res/images/gpbg_r1.png'), linear-gradient(90deg, #e20513 0%, #ff8800 75%);
 	background-size: 100% auto, 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom, top left;
@@ -218,7 +218,7 @@ aside .widget-title {
 	display: none;
 }
 #mainnav > form.search-form input.search-field {
-	background-image: url('../images/search.png'), linear-gradient(90deg, #000 0%, #000 100%);
+	background-image: url('res/images/search_r1.png'), linear-gradient(90deg, #000 0%, #000 100%);
 	background-repeat: no-repeat, no-repeat;
 	background-position: right center, right center;
 	background-size: 36px auto, 36px auto;
@@ -244,7 +244,7 @@ aside .widget-title {
 	transition: color 0.5s ease-in-out;
 }
 #mainnav > form.search-form input.search-field:hover {
-		background-image: url('../images/search.png'), linear-gradient(90deg, #ff5500 0%, #ff5500 100%);
+		background-image: url('res/images/search_r1.png'), linear-gradient(90deg, #ff5500 0%, #ff5500 100%);
 }
 #mainnav > form.search-form input.search-field:focus {
 	background-image: none;
@@ -270,7 +270,7 @@ aside .widget-title {
 	top: 0;
 	width: 40px;
 	height: 100%;
-	background-image: url("../images/logosmall.png");
+	background-image: url("res/images/logosmall_r1.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 40px 40px;
